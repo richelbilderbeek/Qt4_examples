@@ -9,6 +9,7 @@ do
     echo "OK: "$folder
   else
     echo "FAIL: "$folder
+    ls
     exit 1
   fi
 
@@ -18,6 +19,7 @@ do
     echo "OK: "$folder
   else
     echo "FAIL: "$folder
+    ls
     exit 1
   fi
 
