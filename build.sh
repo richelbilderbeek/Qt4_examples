@@ -13,7 +13,7 @@ do
   if [ $? -eq 0 ]; then
     echo OK
   else
-    echo FAIL
+    echo "FAIL: "$folder
     exit 1
   fi
   cd ..
