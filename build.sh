@@ -8,14 +8,7 @@ do
   fi
 
   cd $folder
-  status=`./build.sh`
-  echo "STATUS"
-  echo $status
-  echo "~STATUS"
-  if [ -n "$status" ]
-  then
-    echo "Error in folder "$folder
-    exit 1
-  fi
+  qmake-qt4
+  make
   cd ..
 done
