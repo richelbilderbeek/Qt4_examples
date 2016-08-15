@@ -1,17 +1,11 @@
 #!/bin/bash
-for folder in `ls`
+for folder in `ls -d */`
 do
-  if [ ! -d $folder ]
-  then
-    echo $folder" is not a folder"
-    continue
-  fi
-
   cd $folder
   qmake-qt4
   make
   if [ $? -eq 0 ]; then
-    echo OK
+    echo "OK: "$folder
   else
     echo "FAIL: "$folder
     exit 1
