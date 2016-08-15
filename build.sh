@@ -8,6 +8,6 @@ do
   fi
 
   cd $folder
-  build.sh
+  ./build.sh
   cd ..
 done

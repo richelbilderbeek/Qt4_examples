@@ -27,3 +27,9 @@
 *.exe
 *.out
 *.app
+*.pro.user
+ui_*
+moc_*
+Makefile
+build-*
+QStackedWidgetExample1/QStackedWidgetExample1
